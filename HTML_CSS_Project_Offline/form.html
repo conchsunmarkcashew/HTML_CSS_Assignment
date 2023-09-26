@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resister Form</title>
+</head>
+<body>
+    
+    <h1>Course Registration form</h1>
+
+
+    <form action="thanks.html" target="_blank">
+
+        <fieldset>
+            <table>
+
+                <legend>Personal Details</legend>
+
+                <tr>
+                    <td>
+                        <label for="fname"> First Name</label>
+                    </td>
+                    <td>
+                        <input type="text" pattern="[a-zA-Z]{3,10}"  placeholder="Ex:- Omkar" id="fname" name="fname" size="10" maxlength="10" required>
+                    </td>
+                </tr>
+
+
+                <tr>
+                    <td>
+                        <label for="lname"> Last Name</label>
+                    </td>
+                    <td>
+                        <input type="text"  pattern="[a-zA-Z]{3,10}"   placeholder="Ex:- Patil" id="lname" name="lname" size="10" maxlength="10" required>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="num"> Mobile number </label>
+                    </td>
+                    <td>
+                        <input type="number" pattern="[0-9]{10}" placeholder="978-545-3435" id="num" name="num" required>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="mail"> Email </label>
+                    </td>
+                    <td>
+                        <input type="mail" placeholder="Ex:- op340632@gmail.com" id="mail" name="mail" maxlength="25">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="pass"> Password </label>
+                    </td>
+                    <td>
+                        <input type="password" placeholder="min 5 characters" id="pass" name="pass" minlength="5" maxlength="16" required>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="cpass">Confirm Password </label>
+                    </td>
+                    <td>
+                        <input type="password" placeholder="min 5 characters " id="cpass" name="cpass" minlength="5" maxlength="16" required>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="birth"> DOB </label>
+                    </td>
+                    <td>
+                        <input type="date" value="date" id="birth" name="birth">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="gender"> Gender </label>
+                    </td>
+                    <td>
+                        <input type="Radio" value="male" name="gender" id="gender">Male
+
+                        <input type="Radio" value="fmale" name="gender" id="gender">Female
+
+                        <input type="Radio" value="custom" name="gender" id="gender">Custom
+                    </td>
+                </tr>
+
+
+                <tr>
+
+                    <td><label for="country">Select Country</label></td>
+
+                    <td>
+                        <select name="country" id="country">
+                            <option value="India">India</option>
+                            <option value="USA">USA</option>
+                            <option value="china">China</option>
+                            <option value="japan">Japan</option>
+                            <option value="russia">Russia</option>
+                            
+                        </select>
+                    </td>
+
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="pic"> Upload Picture</label>
+                    </td>
+                    <td>
+                        <input type="file" name="pic" id="pic" >
+                    </td>
+                </tr>
+
+                <!-- <tr>
+                    <td><br></td>
+                </tr>
+                <tr>
+                    <td><input type="submit"></td>
+                </tr> -->
+
+
+            </table>
+        </fieldset>
+
+        <fieldset>
+            <legend>Course Details</legend>
+            <table>
+                <tr>
+                    <td>
+                        <label for="course">Select Course</label>
+                    </td>
+                    <td>
+                        <select name="course" id="course" required>
+                            <option value="course">Python full stack</option>
+                            <option value="course">Java full stack</option>
+                            <option value="course">Blockchain technology</option>
+                            <option value="course">Data Analytics</option>
+                        </select>
+                    </td>
+                </tr>
+
+
+                <tr>
+                    <td>
+                        <label for="mode">Delivery Mode</label>
+                    </td>
+                    <td>
+                        <input type="checkbox" name="mode" id= "mode" >Online
+                        <input type="checkbox" name="mode" id= "mode" >Offline
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <p>Comments</p>
+                        <textarea name="area" id="mode" cols="30" rows="10"></textarea>
+                    </td>
+                </tr>
+               
+               
+            </table>
+        </fieldset>
+        <tr>
+            <td><br></td>
+        </tr>
+        <tr>
+            <td><input type="submit"></td>
+            
+        </tr>
+    </form>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DriveResisterForm</title>
+    <style>
+        fieldset{
+            background: #f9f9f9;
+            border: 2px solid black;
+            border-radius:5px ;
+            width: 40%;
+            margin-left: 30%;
+            padding-left: 20%;
+            background-color: aquamarine;
+            
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <fieldset>
+            <legend style="color: red;">Drive Registration Form</legend>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            
+            <input type="image" src="img.jpg" height="100px" width="100px" alt="img">
+            <br><br>
+
+
+            <label for="uname">Name</label>
+            <input type="text" id="uname" required name="uname"><br><br>
+
+            <label for="tapid">TapID</label>
+            <input type="text" id="tapid" required name="tapid"><br><br>
+
+            <label for="DOE">DATE OF ENROLLMENT</label>
+            <input type="date" id="DOE" name="DOE"><br><br>
+
+            <label for="skill">Skills</label><br>
+
+
+            <input type="checkbox" id="html" name="html">
+            <label for="html">HTML</label>
+
+            <input type="checkbox" id="CSS" name="CSS">
+            <label for="CSS">CSS</label>
+            
+            <input type="checkbox" id="js" name="js">
+            <label for="js">Java</label>
+
+            <input type="checkbox" id="sql" name="sql">
+            <label for="sql">SQL</label>
+
+            <br><br>
+
+            <label for="py">PASSOUT YEAR</label>
+            <input list="dl" id="py" name="py">
+
+            <datalist id="dl">
+                <option>2019</option>
+                <option>2020</option>
+                <option>2021</option>
+                <option>2022</option>
+                <option>2023</option>
+            </datalist>
+
+            <br><br>
+
+            <label for="c1">COURSE</label><br>
+
+            <input type="Radio" name="cr" id="b">
+            <label for="b">B.tech</label>
+
+            <input type="Radio" name="cr" id="c">
+            <label for="c">BCA</label>
+
+            <input type="Radio" name="cr" id="d">
+            <label for="d">BSC</label>
+
+            <br><br>
+
+            <label for="branch">BRANCH</label><br>
+
+            <input type="radio" id="cs" name="br">
+            <label for="cs">CS</label>
+
+            <input type="radio" id="ec" name="br">
+            <label for="ec">EC</label>
+
+            <input type="radio" id="mech" name="br">
+            <label for="mech">Mech</label>
+
+            <input type="radio" id="civil" name="br">
+            <label for="civil">Civil</label>
+
+            <br><br>
+
+            <label for="res">RESUME</label><br>
+            <input type="file" id="res" name="res">
+            
+        </fieldset>
+    </form>
+</body>
+</html>

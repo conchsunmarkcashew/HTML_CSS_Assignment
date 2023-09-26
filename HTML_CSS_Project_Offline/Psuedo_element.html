@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Psuedo Element Selector</title>
+
+    <style>
+        p::first-line{
+            color :red;
+        }
+        p::first-letter{
+            font-size: 40px;
+        }
+        p::after{
+            content:url(chess.jpg);
+            
+        }
+    </style>
+  </head>
+  <body>
+    <p>
+      Why is secret management important?<br> 
+      Secrets management embeds security
+      controls within the highest-risks layers of a modern organization's
+      infrastructure, including cloud, code, data, and devices. Secrets
+      management keeps all secrets safe, prevents secret sprawl, and ensures
+      systems can connect instantly to accomplish automated tasks.
+    </p>
+  </body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User_Validation</title>
+</head>
+<body>
+    <form action="">
+        <fieldset>
+            <legend>UserValidation</legend>
+            <label for="uname">Username</label>
+            <input type="text" required pattern="[a-zA-Z]{3,8}" placeholder="Ex:Omkar" id="uname">
+            <br>
+            <br>
+            <label for="num">Number</label>
+            <input type="text" required pattern="[6-9]{1}[0-9]{9}" id="num">
+            <br>
+            
+        </fieldset>
+        <input type="submit">
+    </form>
+</body>
+</html>
